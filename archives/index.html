@@ -466,24 +466,13 @@
   
 
   
-
-<script>
-  function loadCount() {
-    var d = document, s = d.createElement('script');
-    s.src = 'https://Shaul.disqus.com/count.js';
-    s.id = 'dsq-count-scr';
-    (d.head || d.body).appendChild(s);
-  }
-  // defer loading until the whole page loading is completed
-  window.addEventListener('load', loadCount, false);
-</script>
 <script>
 NexT.utils.loadComments('#valine-comments', () => {
   NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', () => {
     new Valine(Object.assign({
       el  : '#valine-comments',
       path: "/archives/",
-    }, {"enable":true,"appId":"BrrO3G761GjuSRPXkus9rqw5-gzGzoHsz","appKey":"d4EYkwN1VGKWuiC8P6zF4671","placeholder":"Just go go","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"lang":null,"visitor":false,"comment_count":true,"recordIP":false,"serverURLs":null,"enableQQ":false,"requiredFields":[]}
+    }, {"enable":true,"appId":"BrrO3G761GjuSRPXkus9rqw5-gzGzoHsz","appKey":"d4EYkwN1VGKWuiC8P6zF4671","placeholder":"悟道休言天命,修行勿取真经。一悲一喜一枯荣,哪个前生注定。袈裟本无清静,红尘不染性空。幽幽古刹千年钟,都是痴人说梦。","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"lang":null,"visitor":false,"comment_count":true,"recordIP":false,"serverURLs":null,"enableQQ":false,"requiredFields":[]}
     ));
   }, window.Valine);
 });
